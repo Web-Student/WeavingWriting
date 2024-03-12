@@ -4,5 +4,5 @@ services:
   web:
     build: .
     ports: 
-      - "8080:6543"
+      - "6002:8080"
     restart: always
