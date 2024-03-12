@@ -1,0 +1,28 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<div class="d-flex flex-row-reverse">
+    <div class="p-2">Flex item 1</div>
+    <figure class="figure">
+        <img src="FinishedPhotos/MeasureWarp.JPG" alt="Your Image" class="figure-img img-fluid">
+        <figcaption class="figure-caption">Your caption here</figcaption>
+    </figure>
+</div>
+
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
